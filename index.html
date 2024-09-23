@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<area shape="" coords="" href="" alt=""><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -48,7 +48,7 @@
       <!-- Navbar Section Start -->
       <nav class="bg-secondary pt-3 pb-6">
         <div class="container mx-auto px-5 flex justify-between">
-          <button class="btn bg-primary text-lg font-semibold">Blog</button>
+          <button class="btn bg-primary text-lg font-semibold hover:bg-primary">Blog</button>
           <div class="flex justify-center items-center gap-2">
             <img src="assets/logo.png" alt="" />
             <h3 class="text-lg font-semibold">Donate Bangladesh</h3>
@@ -86,7 +86,7 @@
           <div class="space-y-6 mt-5 lg:mt-0">
             <button class="btn btn-sm flex">
               <img src="assets/coin.png" alt="" />
-              <p class="text-third"><span>0</span> BDT</p>
+              <p class="text-third"><span id="balance-1">0</span> BDT</p>
             </button>
             <h3 class="text-lg font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -100,13 +100,14 @@
               lives of those in need.
             </p>
             <input
+              id="input-button1"
               type="text"
               placeholder="Write Donation Amount"
               class="p-2 rounded-lg border-2 border-dashed w-full"
             />
             <button
-              onclick="my_modal_1.showModal()"
-              class="btn bg-primary w-full text-lg font-semibold"
+              id="donate-button1"
+              class="btn bg-primary w-full text-lg font-semibold hover:bg-primary"
             >
               Donate Now
             </button>
@@ -129,7 +130,7 @@
           <div class="space-y-4 mt-5 lg:mt-0">
             <button class="btn btn-sm flex">
               <img src="assets/coin.png" alt="" />
-              <p class="text-third"><span>0</span> BDT</p>
+              <p class="text-third"><span id="balance-2">0</span> BDT</p>
             </button>
             <h3 class="text-lg font-bold text-third">
               Donate for Flood Relief in Feni,Bangladesh
@@ -144,15 +145,12 @@
               difference. Please consider donating today to assist those in
               urgent need.
             </p>
-            <input
+            <input id="input-button2"
               type="text"
               placeholder="Write Donation Amount"
               class="p-2 rounded-lg border-2 border-dashed w-full"
             />
-            <button
-              onclick="my_modal_1.showModal()"
-              class="btn bg-primary w-full text-lg font-semibold"
-            >
+            <button id="donate-button2" class="btn bg-primary w-full text-lg font-semibold hover:bg-primary ">
               Donate Now
             </button>
           </div>
@@ -173,7 +171,7 @@
           <div class="space-y-4 mt-5 lg:mt-0">
             <button class="btn btn-sm flex">
               <img src="assets/coin.png" alt="" />
-              <p class="text-third"><span>0</span> BDT</p>
+              <p class="text-third"><span id="balance-3">0</span> BDT</p>
             </button>
             <h3 class="text-lg font-bold">
               Aid for Injured in the Quota Movement
@@ -189,15 +187,12 @@
               consider making a donation to support these brave individuals in
               their time of need.
             </p>
-            <input
+            <input id="input-button3"
               type="text"
               placeholder="Write Donation Amount"
               class="p-2 rounded-lg border-2 border-dashed w-full"
             />
-            <button
-              onclick="my_modal_1.showModal()"
-              class="btn bg-primary w-full text-lg font-semibold"
-            >
+            <button id="donate-button3" class="btn bg-primary w-full text-lg font-semibold hover:bg-primary">
               Donate Now
             </button>
           </div>
@@ -217,12 +212,14 @@
             <p class="">You Have Donate For Humankind</p>
           </div>
           <p class="my-4 text-lg font-bold">Successfully</p>
-          <button id="btn-continue" class="btn text-lg font-semibold">close information</button>
+          <button id="btn-continue" class="btn text-lg font-semibold">
+            close information
+          </button>
         </form>
       </dialog>
       <!-- End Modal -->
     </main>
-    <script src="js/donate.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
   </body>
 </html>
