@@ -44,6 +44,7 @@ document
     }
   });
 
+
 // Donate for Flood Relief in Feni,Bangladesh
 
 document
@@ -90,6 +91,7 @@ document
     }
   });
 
+  
 // Aid for Injured in the Quota Movement
 
 document
@@ -134,6 +136,7 @@ document
       alert("Invalid Donation Amount");
     }
   });
+
 
 //  donate clicked event
 document.getElementById("donate-btn").addEventListener("click", function () {
